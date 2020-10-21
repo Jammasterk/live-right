@@ -27,7 +27,7 @@ const Wrapper = styled.div`
     font-weight: 200;
     font-size: 10vh;
     margin-left: 0.75em;
-    color: #7a385b
+    color: #7a385b;
   }
 
   .page {
@@ -78,8 +78,12 @@ const Wrapper = styled.div`
     display: flex;
     margin-bottom: 3em;
   }
-  a{
-      color: purple
+  a {
+    color: #7a385b;
+  }
+
+  button {
+    color: #7a385b;
   }
 `;
 

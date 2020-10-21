@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
   background: linear-gradient(145deg, #7a385b, #a44c7b);
   font-family: "Montserrat", sans-serif;
-  height: 100vh;
+  height: 100%;
   padding-top: 2em;
   h1 {
     font-family: "Montserrat", sans-serif;
@@ -33,10 +33,9 @@ const Wrapper = styled.div`
     padding-top: 4em;
     padding-left: 3em;
     border-radius: 10px;
-    margin-top: 1.5em
+    margin-top: 1.5em;
   }
 
-  
   .inner-boxes {
     margin: 1em 0;
     background: linear-gradient(145deg, #7a385b, #a44c7b);
@@ -51,7 +50,6 @@ const Wrapper = styled.div`
     justify-content: space-around;
     margin-left: 2em;
     margin-top: 5%;
-    
   }
 
   button {
@@ -95,6 +93,7 @@ const Wrapper = styled.div`
     padding-left: 1em;
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
+    caret-color: #fccde2;
   }
   @media only screen and (max-width: 880px) {
     .boxes {

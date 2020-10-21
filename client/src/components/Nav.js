@@ -31,7 +31,7 @@ function Nav() {
               <Link to="/home">Home</Link>
             </li>
             <li>
-              <Link to="/shopping">Shop</Link>
+              <Link to="/shopping">Cook</Link>
             </li>
           </ul>
         </div>
