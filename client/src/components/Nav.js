@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Link} from "react-router-dom"
 import styled from "styled-components"
 
@@ -10,20 +10,44 @@ const Wrapper = styled.div`
     position: absolute;
     right: 0;
     justify-content: space-around;
-    margin-top: 5px
+    margin-top: 5px;
   }
   a {
     text-decoration: none;
     font-size: 24px;
     color: #e2ded3;
   }
+
+  .line {
+    width: 35px;
+    height: 2px;
+    margin: 8px;
+    background: #e2ded3;
+  }
+  .hamburger{
+      height: 60px;
+      position: absolute;
+      cursor: pointer
+  }
 `;
 
 function Nav() {
+
+    const [show, setShow] = useState(false)
+
+    function handleClick(){
+        setShow(!show)
+    }
+
     return (
       <Wrapper>
         <div>
-          <ul>
+          <div className="hamburger" onClick={handleClick}>
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+          </div>
+          <ul style={show ? {display: "block"} : {display: "none"}}>
             <li>
               <Link to="/">Auth</Link>
             </li>

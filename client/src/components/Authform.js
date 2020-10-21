@@ -8,22 +8,23 @@ const Wrapper = styled.div`
   font-family: "Montserrat", sans-serif;
   height: 100%;
   padding-top: 2em;
+  padding-bottom: 2em;
   h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
     color: #fccde2;
-    font-size: 100px;
+    font-size: 10vh;
   }
 
   .body {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     margin: 0;
     padding: 0;
   }
   .form {
     width: 90%;
-    height: 90%;
+    height: 100%;
     background: pink;
     margin: auto;
     background: linear-gradient(145deg, #7a385b, #a44c7b);
@@ -34,6 +35,11 @@ const Wrapper = styled.div`
     padding-left: 3em;
     border-radius: 10px;
     margin-top: 1.5em;
+    padding-bottom: 4em
+  }
+
+  form{
+      margin-bottom: 2em
   }
 
   .inner-boxes {
@@ -74,7 +80,7 @@ const Wrapper = styled.div`
   }
 
   p {
-    font-size: 30px;
+    font-size: 3vh;
     color: #fccde2;
     margin-right: 2%;
     font-family: "Montserrat", sans-serif;
@@ -105,6 +111,12 @@ const Wrapper = styled.div`
 
     .form {
       display: block;
+    }
+
+    .inner-boxes{
+        margin: 2em;
+        width: 200px;
+        height: 200px
     }
   }
 `;
@@ -149,7 +161,7 @@ function Authform(){
                 <p>Password:</p>
                 <input
                   style={{ marginLeft: ".75em" }}
-                  type="text"
+                  type="password"
                   className="btm"
                 />
               </div>

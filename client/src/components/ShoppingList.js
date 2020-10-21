@@ -85,6 +85,26 @@ const Wrapper = styled.div`
   button {
     color: #7a385b;
   }
+
+  .line {
+    background: #7a385b;
+  }
+  @media only screen and (max-width: 880px) {
+    .flex {
+      flex-direction: column;
+      margin: auto;
+    }
+
+    input,
+    button {
+      width: 90%;
+      margin: 1em auto;
+    }
+
+    input {
+      margin-bottom: 1em;
+    }
+  }
 `;
 
 export default function ShoppingList() {

@@ -4,14 +4,14 @@ import styled from "styled-components"
 
 const Wrapper = styled.div`
   background: #3e4a61;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 
   .flex {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    /* height: 100vh */
+    height: 100vh
   }
 
   h1 {
@@ -33,6 +33,18 @@ const Wrapper = styled.div`
     border-radius: 15%;
     box-shadow: inset 9.91px 9.91px 12px #384358,
       inset -9.91px -9.91px 12px #44516a;
+  }
+
+  @media only screen and (max-width: 880px) {
+      .flex{
+          display: block
+      }
+
+      .box{
+          width: 40%;
+          height: 40%;
+          margin: 1em auto
+      }
   }
 `;
 
